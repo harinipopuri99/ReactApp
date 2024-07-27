@@ -14,7 +14,7 @@ function HrList(){
         .then(resp=>{
             setData(resp.data)
         })
-    })
+    },[])
     return (
       <div className="container">
         <div className="row">
@@ -53,12 +53,12 @@ function HrList(){
                         </div>
                     </Accordion.Body>
                   </Accordion.Item>
-
+                 
                 </Accordion>
 
                     ))
                 }
-
+                
               </div>
             </div>
           </div>
